@@ -20,4 +20,25 @@ $(document).ready(function() {
         $('.notification').removeClass('show');
       }, 5000);
     });
-  });
+      // loop over time blocks
+    function hourUpdater() {
+        var blockHour = parseInt(
+            $(this)
+              .attr('id')
+              .split('-')[1]
+          );
+
+       // check to see if we've moved past this time
+       if (blockHour < currentHour) {
+        $(this).addClass('past');
+      } else if (blockHour === currentHour) {
+        $(this).removeClass('past');
+        $(this).addClass('present');
+      } else {
+        $(this).removeClass('past');
+        $(this).removeClass('present');
+        $(this).addClass('future');
+      }
+    });
+
+});
