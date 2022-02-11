@@ -13,8 +13,11 @@ Intended use for anyone with a busy schedule and/or that wants to stay organized
 - script.js
 
 **Examples of how the daily planner works:**
+
+
 The current day is displayed on the home page and events can be added/saved on each time block.
 ![Capture1](https://user-images.githubusercontent.com/89051027/153661260-066023c6-8ee7-4e6d-b6aa-2ed02e4a6e17.PNG)
+
 
 
 Time blocks are also color coded to determine whether its in past, present or future. 
